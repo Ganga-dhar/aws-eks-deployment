@@ -4,9 +4,11 @@
 kubectl – A command line tool for working with Kubernetes clusters. 
 eksctl – A command line tool for working with EKS clusters.
 awscli – A command line tool for working with AWS services.(EKS)
+
 =================================
 Step-by-Step: Install kubectl
 ===============================
+
 1. Download the latest kubectl binary
 curl -LO "https://dl.k8s.io/release/$(curl -Ls https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
 2. Make it executable
@@ -15,9 +17,11 @@ chmod +x kubectl
 sudo mv kubectl /usr/local/bin/
 4. Verify the installation
 kubectl version --client
+
 =================================
 Step-by-Step: Install eksctl
 ===============================
+
 1. Download the latest release
 curl --silent --location "https://github.com/eksctl-io/eksctl/releases/latest/download/eksctl_$(uname -s)_amd64.tar.gz" -o eksctl.tar.gz
 2. Extract the archive
@@ -26,9 +30,11 @@ tar -xzf eksctl.tar.gz
 sudo mv eksctl /usr/local/bin/
 4. Verify the installation
 eksctl version
+
 =================================
 Step-by-Step: Install awscli
 ===============================
+
 1. Update packages
 sudo apt-get update
 2. Install unzip and curl (if not already installed)
